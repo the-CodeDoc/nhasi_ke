@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.error{
+    display: hidden;
+    color: red;
+    background-color: aqua;
+}
+.main-content{
+    align-items:center;
+}
+/* Base styles */
+.exam-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    height: 50%;
+}
+
+input[type="text"], input[type="date"], input[type="file"] {
+    width: 100%; /* Full width on small devices */
+    margin-bottom: 10px;
+}
+
+/* Media query for tablets and above */
+@media (min-width: 768px) {
+    .exam-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    input[type="text"], input[type="date"], input[type="file"] {
+        width: 48%; /* Adjust width for larger screens */
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+}
+
+/* Additional styling for larger desktops */
+@media (min-width: 1024px) {
+    .exam-form {
+        max-width: 960px;
+        margin: auto;
+    }
+}
